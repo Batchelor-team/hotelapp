@@ -1,0 +1,139 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "docker-host",
+      "type": "rectangle",
+      "x": 50,
+      "y": 0,
+      "width": 500,
+      "height": 200,
+      "backgroundColor": "#f1f5f9",
+      "strokeColor": "#475569",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "text": ""
+    },
+    {
+      "id": "docker-label",
+      "type": "text",
+      "x": 200,
+      "y": 10,
+      "width": 200,
+      "height": 20,
+      "text": "Docker Host",
+      "strokeColor": "#64748b",
+      "fontSize": 16
+    },
+    {
+      "id": "container",
+      "type": "rectangle",
+      "x": 100,
+      "y": 60,
+      "width": 400,
+      "height": 100,
+      "backgroundColor": "#dbeafe",
+      "strokeColor": "#1e40af",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 },
+      "text": ""
+    },
+    {
+      "id": "container-label",
+      "type": "text",
+      "x": 250,
+      "y": 70,
+      "width": 100,
+      "height": 20,
+      "text": "hotelapp container",
+      "strokeColor": "#1e40af",
+      "fontSize": 14
+    },
+    {
+      "id": "dotnet-app",
+      "type": "rectangle",
+      "x": 140,
+      "y": 100,
+      "width": 320,
+      "height": 40,
+      "backgroundColor": "#dcfce7",
+      "strokeColor": "#166534",
+      "roundness": { "type": 3 },
+      "text": ".NET 8 ASP.NET App (:8080)"
+    },
+    {
+      "id": "port-mapping",
+      "type": "arrow",
+      "x": 300,
+      "y": 200,
+      "width": 0,
+      "height": 40,
+      "strokeColor": "#64748b",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow",
+      "text": ""
+    },
+    {
+      "id": "port-label",
+      "type": "text",
+      "x": 230,
+      "y": 240,
+      "width": 200,
+      "height": 20,
+      "text": "localhost:8081 → container:8080",
+      "strokeColor": "#64748b",
+      "fontSize": 13
+    },
+    {
+      "id": "compose-file",
+      "type": "rectangle",
+      "x": 580,
+      "y": 60,
+      "width": 120,
+      "height": 60,
+      "backgroundColor": "#fef3c7",
+      "strokeColor": "#92400e",
+      "roundness": { "type": 3 },
+      "text": "compose.yaml"
+    },
+    {
+      "id": "dockerfile",
+      "type": "rectangle",
+      "x": 580,
+      "y": 140,
+      "width": 120,
+      "height": 60,
+      "backgroundColor": "#fce7f3",
+      "strokeColor": "#9d174d",
+      "roundness": { "type": 3 },
+      "text": "Dockerfile\n(sdk:8.0)"
+    },
+    {
+      "id": "arrow-compose",
+      "type": "arrow",
+      "x": 500,
+      "y": 90,
+      "width": 80,
+      "height": 0,
+      "strokeColor": "#64748b",
+      "strokeWidth": 1,
+      "startBinding": { "elementId": "container" },
+      "endBinding": { "elementId": "compose-file" }
+    },
+    {
+      "id": "arrow-dockerfile",
+      "type": "arrow",
+      "x": 500,
+      "y": 170,
+      "width": 80,
+      "height": 0,
+      "strokeColor": "#64748b",
+      "strokeWidth": 1,
+      "startBinding": { "elementId": "container" },
+      "endBinding": { "elementId": "dockerfile" }
+    }
+  ]
+}
