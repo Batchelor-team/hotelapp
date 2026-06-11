@@ -16,6 +16,8 @@ A .NET 8 web application containerized with Docker. Built from the ASP.NET templ
 
 The app runs as a single service behind a port mapping (8081 → 8080).
 
+[View architecture diagram](docs/architecture.excalidraw) — edit at [excalidraw.com](https://excalidraw.com).
+
 ## Quick Start
 
 ```sh
